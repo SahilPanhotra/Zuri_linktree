@@ -2,6 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import myProfilePic from "./assets/profile__pic.png";
 import ShareIcon from "./assets/share__icon.svg";
+import slack from "./assets/slack.svg"
+import github from "./assets/github.svg"
+import zuri from "./assets/zuri_logo.svg"
+import ingress from "./assets/Ingressive.svg"
 
 function App() {
   return (
@@ -47,10 +51,27 @@ function App() {
                 </a>
               </div>
             </section>
-            <section id="social"></section>
+            <section id="social">
+              <div className="social__wrapper">
+                  <a href="https://slack.com/sahilpanhotra" target="_blank"><img src={slack} alt="Slack" /></a>
+                  <a href="https://github.com/sahilpanhotra" target="_blank" className="github__icon"><img src={github} alt="Github" /></a>
+              </div>  
+            </section>
           </div>
         </div>
       </main>
+      <footer>
+        <div className="footer__container">
+          <div className="footer__row">
+            <div className="footer__wrapper">
+            <img src={zuri} alt="" />
+            <p>HNG Internship 9 Frontend Task</p>
+            <img src={ingress} alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+
     </div>
   );
 }

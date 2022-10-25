@@ -70,7 +70,7 @@ link {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  cursor: none;
 }
 .link__btn {
   padding: 24px;
@@ -82,6 +82,7 @@ link {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 #slack {
   display: none;
@@ -92,4 +93,40 @@ link {
 }
 .btn__last {
   margin-bottom: 0;
+}
+
+/* SOCIAL SECTION  
+*/
+
+.social__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 32px;
+  margin-top: 24px;
+}
+.github__icon {
+  margin-left: 24px;
+}
+
+/* FOOTER  */
+
+.footer__container {
+  padding: 48px 0;
+}
+.footer__row {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+p {
+  color: #667085;
+  font-weight: 400;
+  font-size: 16px;
 }
