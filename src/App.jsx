@@ -60,7 +60,7 @@ function App() {
                 </div>
                 <div className="link">
                 <a href="https://books.zuri.team/design-rules" target="_blank">
-                  <button className="link__btn btn__last" id="book__design">Design Books</button>
+                  <button className="link__btn" id="book__design">Design Books</button>
                 </a>
                 </div>
               </div>
