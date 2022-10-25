@@ -57,6 +57,7 @@
   border-radius: 50%;
   border: 1px dotted #98a2b3;
   background-color: white;
+  cursor: pointer;
 }
 .button__wrapper {
   position: absolute;
@@ -66,11 +67,8 @@
 
 /* LINKS SECTION
  */
-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: none;
+.link {
+  margin-bottom: 24px;
 }
 .link__btn {
   padding: 24px;
@@ -81,7 +79,6 @@ link {
   text-align: center;
   font-weight: 500;
   font-size: 18px;
-  margin-bottom: 24px;
   cursor: pointer;
 }
 #slack {

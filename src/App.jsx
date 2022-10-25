@@ -28,27 +28,41 @@ function App() {
             </section>
             <section id="links">
               <div className="links__wrapper">
-                <a className="link" href="https://twitter.com/sahilpanhotra" target="_blank">
+                <div className="link">
+                <a href="https://twitter.com/sahilpanhotra" target="_blank">
                   <button className="link__btn " id="twitter">Twitter Link</button>
                 </a>
-                <a className="link" href="https://slack.com/sahilpanhotra" target="_blank">
-                  <button className="link__btn" id="slack">Slack</button>
+                </div>
+                <div id="slack" className="link">
+                <a href="https://slack.com/sahilpanhotra" target="_blank">
+                  <button className="link__btn">Slack</button>
                 </a>
-                <a className="link" href="https://training.zuri.team/" target="_blank">
+                </div>
+                <div className="link">
+                <a href="https://training.zuri.team/" target="_blank">
                   <button className="link__btn" id="btn__zuri">Zuri Team</button>
                 </a>
-                <a className="link" href="http://books.zuri.team/" target="_blank">
+                </div>
+                <div className="link">
+                <a href="http://books.zuri.team/" target="_blank">
                   <button className="link__btn" id="books">Zuri Books</button>
                 </a>
-                <a className="link" href="https://books.zuri.team/python-for-beginners?ref_id=sahilpanhotra" target="_blank">
+                </div>
+                <div className="link">
+                <a href="https://books.zuri.team/python-for-beginners?ref_id=sahilpanhotra" target="_blank">
                   <button className="link__btn" id="book__python">Python Books</button>
                 </a>
-                <a className="link" href="https://background.zuri.team/" target="_blank">
+                </div>
+                <div className="link">
+                <a href="https://background.zuri.team/" target="_blank">
                   <button className="link__btn" id="pitch">BackGround Check for Coders</button>
                 </a>
-                <a className="link" href="https://books.zuri.team/design-rules" target="_blank">
+                </div>
+                <div className="link">
+                <a href="https://books.zuri.team/design-rules" target="_blank">
                   <button className="link__btn btn__last" id="book__design">Design Books</button>
                 </a>
+                </div>
               </div>
             </section>
             <section id="social">
