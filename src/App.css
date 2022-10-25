@@ -16,6 +16,9 @@
 }
 
 /* PROFILE SECTION STYLES */
+#section__profile{
+  position: relative;
+}
 
 .profile__container {
   display: flex;
@@ -41,4 +44,22 @@
   font-size: 20px;
   text-align: center;
   color: #101828;
+}
+
+/* SHARE BUTTON  */
+
+.button__share {
+ display: flex;
+ width: 40px;
+ height: 40px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ border: 1px dotted #98a2b3 ;
+ background-color: white;
+}
+.button__wrapper {
+  position: absolute;
+  top: -10%;
+  right: 10%;
 }
