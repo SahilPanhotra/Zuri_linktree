@@ -6,6 +6,7 @@ import slack from "./assets/slack.svg"
 import github from "./assets/github.svg"
 import zuri from "./assets/zuri_logo.svg"
 import ingress from "./assets/Ingressive.svg"
+import hamBurger from "./assets/hamburger.svg"
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
                 <h2 className="profile__name">Sahil Panhotra</h2>
                 <div className="button__wrapper">
                   <button className="button__share">
-                    <img src={ShareIcon} alt="Share__button" />
+                    <img className="share" src={ShareIcon} alt="Share__button" />
+                    <img className="hamburger" src={hamBurger} alt="Hamburger Menu" />
                   </button>
                 </div>
               </div>

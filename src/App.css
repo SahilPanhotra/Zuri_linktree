@@ -61,7 +61,7 @@
 }
 .button__wrapper {
   position: absolute;
-  top: -10%;
+  top: -20px;
   right: 10%;
 }
 
@@ -126,4 +126,35 @@ p {
   color: #667085;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* RESPONSIVE */
+.hamburger {
+  display: none;
+}
+
+@media (max-width:375px) {
+    footer {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+    .share {
+      display: none;
+    }
+    .button__wrapper {
+      right: 0;
+    }
+}
+
+@media (max-width:652px) {
+  footer {
+    display: none;
+  }
+}
+@media (max-width:225px) {
+  .button__wrapper {
+    right: -20%;
+  }
 }
