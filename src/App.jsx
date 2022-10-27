@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import myProfilePic from "./assets/profile__pic.png";
+import myProfilePic from "./assets/profile__pic.jpg";
 import ShareIcon from "./assets/share__icon.svg";
 import slack from "./assets/slack.svg"
 import github from "./assets/github.svg"
@@ -87,7 +86,6 @@ function App() {
           </div>
         </div>
       </footer>
-
     </div>
   );
 }
