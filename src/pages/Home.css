@@ -116,9 +116,6 @@
 }
 
 @media (max-width:375px) {
-    footer {
-      display: none;
-    }
     .hamburger {
       display: block;
     }

@@ -38,7 +38,7 @@ function Contact() {
                 <div className="message__container child">
                   <div className="input__withLabel">
                     <label >Message</label>
-                    <textarea className="input" type="text" id="message" placeholder="Send me a message and I'll reply you as soon as possible..." />
+                    <textarea className="input" type="text" id="message" rows={3} placeholder="Send me a message and I'll reply you as soon as possible..." />
                   </div>
                 </div>
                 <div className="checkbox__container child">

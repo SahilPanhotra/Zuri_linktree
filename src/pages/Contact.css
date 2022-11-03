@@ -109,3 +109,15 @@ label {
   cursor: pointer;
 }
 
+/* Responsive  */
+@media (max-width:568px) {
+    .name__row{
+        flex-direction: column;
+    }
+    .first__name,.last__name {
+        width: 100%;
+    }
+    .first__name{
+        margin-bottom: 24px;
+    }
+}

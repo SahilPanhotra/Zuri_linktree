@@ -1,8 +1,4 @@
-@media (max-width:652px) {
-    footer {
-      display: none;
-    }
-  }
+
 
   .footer__container {
     padding: 48px 0;
@@ -16,6 +12,7 @@
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     align-items: flex-end;
   }
   p {
@@ -23,3 +20,15 @@
     font-weight: 400;
     font-size: 16px;
   }
+
+  @media (max-width:652px) {
+    .footer__wrapper {
+          text-align: left;
+          flex-direction: column;
+          align-items:flex-start;
+      }
+      .margin {
+        margin-bottom: 16px;
+      }
+      
+    }

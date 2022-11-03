@@ -10,8 +10,8 @@ function Footer() {
     <div className="footer__container">
       <div className="footer__row">
         <div className="footer__wrapper">
-        <img src={zuri} alt="" />
-        <p>HNG Internship 9 Frontend Task</p>
+        <img className='margin' src={zuri} alt="" />
+        <p className='margin'>HNG Internship 9 Frontend Task</p>
         <img src={ingress} alt="" />
         </div>
       </div>
