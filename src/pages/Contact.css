@@ -70,7 +70,7 @@ label {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color:black;
+  color: black;
   border: 1px solid #d0d5dd;
   border-radius: 8px;
 }
@@ -90,6 +90,12 @@ label {
   line-height: 24px;
   color: #475467;
 }
+.btn__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn {
   width: 100%;
   padding: 12px 20px;
@@ -103,6 +109,25 @@ label {
   line-height: 24px;
   color: white;
   cursor: pointer;
+}
+
+.popUp--hiden {
+  opacity: 0;
+  position: absolute;
+  padding: 20px;
+  bottom: -66px;
+  font-weight: 600;
+  color: white;
+  background-color: #55d777;
+}
+.popup {
+  padding: 20px;
+  opacity: 1;
+  position: absolute;
+  bottom: -66px;
+  font-weight: 600;
+  color: white;
+  background-color: #55d777;
 }
 
 /* CheckBox */
@@ -221,10 +246,14 @@ label {
 .input:active {
   color: black;
 }
-.input::read-only {
+.input:read-only {
   color: #667085;
 }
-
+.error {
+  border: 1px solid #f89687;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #ffd3cc;
+  border-radius: 8px;
+}
 
 /* Responsive  */
 @media (max-width: 568px) {

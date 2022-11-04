@@ -1,7 +1,16 @@
 import React from "react";
 import "./Contact.css"
+import { useState } from "react";
 
 function Contact() {
+  const [error, setError] = useState("");
+  const toggleError = () => {
+    setError(error === "" ? "error" : "");
+  }
+  const [popUp,setPopUp] =useState("");
+  const showPopUp = () => {
+    setPopUp(popUp === "" ? "popup" : "");
+  }
   return (
     <div>
       <div className="contactUs__container">
@@ -38,7 +47,7 @@ function Contact() {
                 <div className="message__container child">
                   <div className="input__withLabel">
                     <label >Message</label>
-                    <textarea className="input" type="text" id="message" rows={3} placeholder="Send me a message and I'll reply you as soon as possible..." />
+                    <textarea className={`input ${error}`} type="text" id="message" rows={3} placeholder="Send me a message and I'll reply you as soon as possible..." />
                   </div>
                 </div>
                 <div className="checkbox__container child">
@@ -46,7 +55,10 @@ function Contact() {
                   <label className="policyAgree">You agree to providing your data to Sahil Panhotra who may contact you.</label>
                 </div>
                 </div>
-                <button className="btn" id="btn__submit">Send Message</button>
+                <div className="btn__wrapper">
+                <button onClick={showPopUp} className={`btn`} id="btn__submit">Send Message</button>
+                <div className={`popUp--hiden ${popUp}`}>Submitted</div>
+                </div>
               </form>
             </div>
           </div>
