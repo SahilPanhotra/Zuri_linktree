@@ -42,8 +42,8 @@ function Contact() {
                   </div>
                 </div>
                 <div className="checkbox__container child">
-                  <input className="input__checkbox" type="checkbox" />
-                  <span className="policyAgree">You agree to providing your data to Sahil Panhotra who may contact you.</span>
+                  <input className="custom__checkbox" type="checkbox" />
+                  <label className="policyAgree">You agree to providing your data to Sahil Panhotra who may contact you.</label>
                 </div>
                 </div>
                 <button className="btn" id="btn__submit">Send Message</button>

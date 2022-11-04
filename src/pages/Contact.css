@@ -84,15 +84,11 @@ label {
 .form__fields div.child:last-child {
   margin-bottom: 0px;
 }
-.input__checkbox {
-  border-radius: 9999px;
-}
 .policyAgree {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #475467;
-  margin-left: 12px;
 }
 .btn {
   width: 100%;
@@ -109,15 +105,108 @@ label {
   cursor: pointer;
 }
 
+/* CheckBox */
+.checkbox__container {
+  position: relative;
+}
+[type="checkbox"] {
+  opacity: 0;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  cursor: pointer;
+}
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  display: inline-block;
+  color: #475467;
+}
+[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+}
+[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0x;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1570ef;
+  border-radius: 6px;
+}
+[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #1570ef;
+  background-image: url(../assets/check.svg);
+  background-size: contain;
+  border-radius: 6px;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+[type="checkbox"]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/check.svg);
+  background-size: contain;
+  border-radius: 6px;
+  transform: scale(0);
+  opacity: 0;
+}
+[type="checkbox"]:not(:checked):hover + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+  border-radius: 6px;
+}
+[type="checkbox"]:disabled + label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d0d5dd;
+  background-color: #F2F4F7;;
+  border-radius: 6px;
+}
+
 /* Responsive  */
-@media (max-width:568px) {
-    .name__row{
-        flex-direction: column;
-    }
-    .first__name,.last__name {
-        width: 100%;
-    }
-    .first__name{
-        margin-bottom: 24px;
-    }
+@media (max-width: 568px) {
+  .name__row {
+    flex-direction: column;
+  }
+  .first__name,
+  .last__name {
+    width: 100%;
+  }
+  .first__name {
+    margin-bottom: 24px;
+  }
 }
