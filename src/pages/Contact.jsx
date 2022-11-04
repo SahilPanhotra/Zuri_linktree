@@ -27,13 +27,13 @@ function Contact() {
                     <div className="first__name">
                       <div className="input__withLabel">
                         <label>First name</label>
-                        <input className="input" id="first__name" type="text" placeholder="Enter your first name" />
+                        <input className="input" id="first_name" type="text" placeholder="Enter your first name" />
                       </div>
                       </div>
                       <div className="last__name">
                       <div className="input__withLabel">
                         <label>Last name</label>
-                        <input className="input" id="last__name" type="text" placeholder="Enter your last name" />
+                        <input className="input" id="last_name" type="text" placeholder="Enter your last name" />
                       </div>
                       </div> 
                   </div>
